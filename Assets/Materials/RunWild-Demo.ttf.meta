@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: e404544bec3534d12b9c883072fbbd3e
+timeCreated: 1517183627
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Run Wild - Demo
+  fontNames:
+  - Run Wild - Demo
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
