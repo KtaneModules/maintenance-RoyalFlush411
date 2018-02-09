@@ -136,12 +136,14 @@ public class maintenanceScript : MonoBehaviour
 		public void OnjobLeft()
 		{
 				GetComponent<KMAudio>().PlayGameSoundAtTransform(KMSoundOverride.SoundEffect.ButtonPress, transform);
+				jobLeft.AddInteractionPunch(.5f);
 				jobIndex = ((jobIndex + jobEntries.Count) - 1) % jobEntries.Count;
 				jobText.text = jobEntries[jobIndex].ToString();
 		}
 		public void OnjobRight()
 		{
 				GetComponent<KMAudio>().PlayGameSoundAtTransform(KMSoundOverride.SoundEffect.ButtonPress, transform);
+				jobRight.AddInteractionPunch(.5f);
 				jobIndex = (jobIndex + 1) % jobEntries.Count;
 				jobText.text = jobEntries[jobIndex].ToString();
 		}
