@@ -13,9 +13,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: maintenance
   title: Maintenance
-  description: "Maintenance 1.1\nHow to repair your car. Step 1: Call a mechanic.
-    There is no step 2\u2026\n\nModule ID: maintenance\n\nCreated by: Royal_Flu$h\n\nManual
-    available here: https://ktane.timwi.de/HTML/Maintenance.html"
-  version: 1.1
+  description: "Maintenance 1.2\nHow to repair your car. Step 1: Call a mechanic.
+    There is no step 2\u2026\n\nModule ID: maintenance\n\nCreated by: Royal_Flu$h\nTwitchPlays
+    implemented by: Timwi\n\nManual available here: https://ktane.timwi.de/HTML/Maintenance.html"
+  version: 1.2
   outputFolder: build
   previewImage: {fileID: 2800000, guid: 14ec5a52a78dc4aef9106f363ceb2334, type: 3}
