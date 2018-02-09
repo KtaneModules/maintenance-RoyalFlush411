@@ -162,22 +162,22 @@ public class maintenanceScript : MonoBehaviour
     //Buttons
     public void OnjobLeft()
     {
-        GetComponent<KMAudio>().PlayGameSoundAtTransform(KMSoundOverride.SoundEffect.ButtonPress, transform);
+        GetComponent<KMAudio>().PlayGameSoundAtTransform(KMSoundOverride.SoundEffect.ButtonPress, jobLeft.transform);
         jobLeft.AddInteractionPunch(.5f);
         jobIndex = ((jobIndex + jobEntries.Count) - 1) % jobEntries.Count;
         jobText.text = jobEntries[jobIndex];
     }
     public void OnjobRight()
     {
-        GetComponent<KMAudio>().PlayGameSoundAtTransform(KMSoundOverride.SoundEffect.ButtonPress, transform);
+        GetComponent<KMAudio>().PlayGameSoundAtTransform(KMSoundOverride.SoundEffect.ButtonPress, jobRight.transform);
         jobRight.AddInteractionPunch(.5f);
         jobIndex = (jobIndex + 1) % jobEntries.Count;
         jobText.text = jobEntries[jobIndex];
     }
     public void OnrepairBut()
     {
-        GetComponent<KMAudio>().PlayGameSoundAtTransform(KMSoundOverride.SoundEffect.ButtonPress, transform);
-        GetComponent<KMSelectable>().AddInteractionPunch();
+        GetComponent<KMAudio>().PlayGameSoundAtTransform(KMSoundOverride.SoundEffect.ButtonPress, repairBut.transform);
+        repairBut.AddInteractionPunch();
 
         switch (stage)
         {
@@ -1145,5 +1145,4 @@ public class maintenanceScript : MonoBehaviour
                 break;
         }
     }
-
 }
