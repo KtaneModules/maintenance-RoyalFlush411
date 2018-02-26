@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html class="no-js">
+<html>
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
@@ -8,11 +8,12 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type='text/css' href="css/font.css">
-    <script src='js/highlighter.js'></script>
+    <script src='js/highlighter.js'></script><script src='js/translator.js'></script>
     <style>
         .venn {
             text-align: center;
         }
+
             .venn img {
                 width: 14cm;
             }
@@ -29,17 +30,14 @@
                 <img src="img/Component/Maintenance.svg" class="diagram">
                 <h2>On the Subject of Maintenance</h2>
                 <p class="flavour-text">How to repair your car. Step 1: Call a mechanic. There is no step 2…</p>
-
                 <p>The module consists of a number plate, a job scroller, a fix button and a memo with the number of jobs that require completion: 2, 3 or 4.</p>
                 <p>Use the number plate tables to calculate information about the car.</p>
                 <p>Use the Venn diagram and Ordering Rules to determine the number of jobs that require maintenance and the order in which they should be completed.</p>
-
                 <h3>Number Plate</h3>
                 <p>
                     The number plate is broken down into three parts.<br>
                     The first two letters tell you the model of the car.
                 </p>
-
                 <table class='condition-table'>
                     <tr>
                         <th><strong>Plate Ref</strong></th>
@@ -90,7 +88,6 @@
                         <td>-</td>
                     </tr>
                 </table>
-
                 <p>The first two numbers tell you when the car was manufactured. New UK number plates are released in March and September. To find the car's age, multiply the base value of the year by the model multiplier.</p>
                 <table class='condition-table'>
                     <tr>
@@ -101,72 +98,15 @@
                         <th><strong>Manufactured</strong></th>
                         <th><strong>Base Value</strong></th>
                     </tr>
-                    <tr>
-                        <td>51</td>
-                        <td>Sept 2001</td>
-                        <td>£50</td>
-                        <td>57</td>
-                        <td>Sept 2007</td>
-                        <td>£125</td>
-                    </tr>
-                    <tr>
-                        <td>02</td>
-                        <td>Mar 2002</td>
-                        <td>£60</td>
-                        <td>08</td>
-                        <td>Mar 2008</td>
-                        <td>£150</td>
-                    </tr>
-                    <tr>
-                        <td>52</td>
-                        <td>Sept 2002</td>
-                        <td>£60</td>
-                        <td>58</td>
-                        <td>Sept 2008</td>
-                        <td>£150</td>
-                    </tr>
-                    <tr>
-                        <td>03</td>
-                        <td>Mar 2003</td>
-                        <td>£70</td>
-                        <td>09</td>
-                        <td>Mar 2009</td>
-                        <td>£175</td>
-                    </tr>
-                    <tr>
-                        <td>53</td>
-                        <td>Sept 2003</td>
-                        <td>£70</td>
-                        <td>59</td>
-                        <td>Sept 2009</td>
-                        <td>£175</td>
-                    </tr>
-                    <tr>
-                        <td>04</td>
-                        <td>Mar 2004</td>
-                        <td>£80</td>
-                        <td>10</td>
-                        <td>Mar 2010</td>
-                        <td>£200</td>
-                    </tr>
-                    <tr>
-                        <td>54</td>
-                        <td>Sept 2004</td>
-                        <td>£80</td>
-                        <td>60</td>
-                        <td>Sept 2010</td>
-                        <td>£200</td>
-                    </tr>
-                    <tr>
-                        <td>05</td>
-                        <td>Mar 2005</td>
-                        <td>£90</td>
-                        <td>11</td>
-                        <td>Mar 2011</td>
-                        <td>£250</td>
-                    </tr>
+                    <tr><td>51</td><td>Sept 2001</td><td>£50</td> <td>55</td><td>Sept 2005</td><td>£90</td>   </tr>
+                    <tr><td>02</td><td>Mar 2002</td> <td>£60</td> <td>06</td><td>Mar 2006</td> <td>£100</td>  </tr>
+                    <tr><td>52</td><td>Sept 2002</td><td>£60</td> <td>56</td><td>Sept 2006</td><td>£100</td>  </tr>
+                    <tr><td>03</td><td>Mar 2003</td> <td>£70</td> <td>07</td><td>Mar 2007</td> <td>£125</td>  </tr>
+                    <tr><td>53</td><td>Sept 2003</td><td>£70</td> <td>57</td><td>Sept 2007</td><td>£125</td>  </tr>
+                    <tr><td>04</td><td>Mar 2004</td> <td>£80</td> <td>08</td><td>Mar 2008</td> <td>£150</td>  </tr>
+                    <tr><td>54</td><td>Sept 2004</td><td>£80</td> <td>58</td><td>Sept 2008</td><td>£150</td>  </tr>
+                    <tr><td>05</td><td>Mar 2005</td> <td>£90</td> <td>09</td><td>Mar 2009</td> <td>£175</td>  </tr>
                 </table>
-
             </div>
             <div class="page-footer relative-footer">Page 1 of 4</div>
         </div>
@@ -185,94 +125,17 @@
                         <th><strong>Manufactured</strong></th>
                         <th><strong>Base Value</strong></th>
                     </tr>
-                    <tr>
-                        <td>55</td>
-                        <td>Sept 2005</td>
-                        <td>£90</td>
-                        <td>61</td>
-                        <td>Sept 2011</td>
-                        <td>£250</td>
-                    </tr>
-                    <tr>
-                        <td>06</td>
-                        <td>Mar 2006</td>
-                        <td>£100</td>
-                        <td>12</td>
-                        <td>Mar 2012</td>
-                        <td>£300</td>
-                    </tr>
-                    <tr>
-                        <td>56</td>
-                        <td>Sept 2006</td>
-                        <td>£100</td>
-                        <td>62</td>
-                        <td>Sept 2012</td>
-                        <td>£300</td>
-                    </tr>
-                    <tr>
-                        <td>07</td>
-                        <td>Mar 2007</td>
-                        <td>£125</td>
-                        <td>13</td>
-                        <td>Mar 2013</td>
-                        <td>£400</td>
-                    </tr>
-                    <tr>
-                        <td>63</td>
-                        <td>Sept 2013</td>
-                        <td>£400</td>
-                        <td>17</td>
-                        <td>Mar 2017</td>
-                        <td>£800</td>
-                    </tr>
-                    <tr>
-                        <td>14</td>
-                        <td>Mar 2014</td>
-                        <td>£500</td>
-                        <td>67</td>
-                        <td>Sept 2017</td>
-                        <td>£800</td>
-                    </tr>
-                    <tr>
-                        <td>64</td>
-                        <td>Sept 2014</td>
-                        <td>£500</td>
-                        <td>18</td>
-                        <td>Mar 2018</td>
-                        <td>£900</td>
-                    </tr>
-                    <tr>
-                        <td>15</td>
-                        <td>Mar 2015</td>
-                        <td>£600</td>
-                        <td>68</td>
-                        <td>Sept 2018</td>
-                        <td>£900</td>
-                    </tr>
-                    <tr>
-                        <td>65</td>
-                        <td>Sept 2015</td>
-                        <td>£600</td>
-                        <td>19</td>
-                        <td>Mar 2019</td>
-                        <td>£1,000</td>
-                    </tr>
-                    <tr>
-                        <td>16</td>
-                        <td>Mar 2016</td>
-                        <td>£700</td>
-                        <td>69</td>
-                        <td>Sept 2019</td>
-                        <td>£1,000</td>
-                    </tr>
-                    <tr>
-                        <td>66</td>
-                        <td>Sept 2016</td>
-                        <td>£700</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>-</td>
-                    </tr>
+                    <tr><td>59</td><td>Sept 2009</td><td>£175</td><td>15</td><td>Mar 2015</td> <td>£600</td>  </tr>
+                    <tr><td>10</td><td>Mar 2010</td> <td>£200</td><td>65</td><td>Sept 2015</td><td>£600</td>  </tr>
+                    <tr><td>60</td><td>Sept 2010</td><td>£200</td><td>16</td><td>Mar 2016</td> <td>£700</td>  </tr>
+                    <tr><td>11</td><td>Mar 2011</td> <td>£250</td><td>66</td><td>Sept 2016</td><td>£700</td>  </tr>
+                    <tr><td>61</td><td>Sept 2011</td><td>£250</td><td>17</td><td>Mar 2017</td> <td>£800</td>  </tr>
+                    <tr><td>12</td><td>Mar 2012</td> <td>£300</td><td>67</td><td>Sept 2017</td><td>£800</td>  </tr>
+                    <tr><td>62</td><td>Sept 2012</td><td>£300</td><td>18</td><td>Mar 2018</td> <td>£900</td>  </tr>
+                    <tr><td>13</td><td>Mar 2013</td> <td>£400</td><td>68</td><td>Sept 2018</td><td>£900</td>  </tr>
+                    <tr><td>63</td><td>Sept 2013</td><td>£400</td><td>19</td><td>Mar 2019</td> <td>£1,000</td></tr>
+                    <tr><td>14</td><td>Mar 2014</td> <td>£500</td><td>69</td><td>Sept 2019</td><td>£1,000</td></tr>
+                    <tr><td>64</td><td>Sept 2014</td><td>£500</td><td>-</td> <td>-</td>   <td>-</td></tr>
                 </table>
                 <br>
                 <p>
@@ -311,8 +174,7 @@
                         <td>Hastings Direct</td>
                     </tr>
                 </table>
-
-                <h3>Potential Jobs & Insurance Perks</h3>
+                <h3>Potential Jobs</h3>
                 <p>Below, you will find a list of jobs you may encounter and their rates. Jobs designated with an [H] are considered "heavy" jobs.</p>
                 <table class='condition-table'>
                     <tr>
@@ -381,7 +243,16 @@
                 <span class="page-header-section-title">Maintenance</span>
             </div>
             <div class="page-content">
-                <p>Insurance companies may cover different elements of the maintenance. The maintenance must still be undertaken, but no cost is incurred.</p>
+                <h3>Write-off Status &amp; Insurance Perks</h3>
+                <p>
+                    Occasionally, a car may be deemed to be a write-off. If this is the case, irrespective of how many or which jobs are required, select the "Write-off" option in the job scroller.<br>
+                    A car is considered a write-off if either of the following conditions are met:
+                </p>
+                <ul class='conditions'>
+                    <li>It is a pre-2004 Honda.</li>
+                    <li>The cost of maintenance that is not covered by the insurance is greater than the value of the car.</li>
+                </ul>
+                <p>Insurance companies may cover different elements of the maintenance. The maintenance must still be undertaken even if its cost is covered.</p>
                 <table class='condition-table'>
                     <tr>
                         <th><strong>Job</strong></th>
@@ -408,15 +279,6 @@
                         <td>AA & Admiral</td>
                     </tr>
                 </table>
-                <h3>Write-off Status</h3>
-                <p>
-                    Occasionally, a car may be deemed to be a write-off. If this is the case, irrespective of how many or which jobs are required, select the "Write-off" option in the job scroller.<br>
-                    A car is considered a write-off if either of the following conditions are met:
-                </p>
-                <ul class='conditions'>
-                    <li>It is a pre-2004 Honda.</li>
-                    <li>The cost of maintenance is greater than the value of the car.</li>
-                </ul>
                 <h3>Required Maintenance</h3>
                 <p>Use the Venn diagram and table to determine which jobs need to be done. Take the first 2, 3 or 4 jobs from the list in the table as required.</p>
                 <table class='condition-table'>
@@ -478,7 +340,6 @@
             </div>
             <div class="page-footer relative-footer">Page 3 of 4</div>
         </div>
-
         <div class="page page-bg-03">
             <div class="page-header">
                 <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
@@ -487,12 +348,12 @@
             <div class="page-content">
                 <p class='venn'><img src="img/Maintenance/Maintenance Venn.png"></p>
                 <h3>Ordering Rules</h3>
-                <p>Jobs should be carried out in accordance with the following rules:</p>
+                <p>All jobs should be done from cheapest to dearest with the following exceptions:</p>
                 <ul class='conditions'>
                     <li>Oil change and Wash must be done last. If both are required, do the Oil change before the Wash.</li>
                     <li>Windscreen chip and Brake fluid change must be done first. If both are required, do the Windscreen chip before the Brake fluid change.</li>
-                    <li>Heavy jobs must be done before any tyre work.</li>
-                    <li>All other jobs should be done from cheapest to dearest.</li>
+                    <li>Heavy jobs must be done before any tyre work, but not before any other cheaper work.</li>
+                    <li>Jobs covered by insurance must be ordered according to their "retail" price.</li>
                 </ul>
             </div>
             <div class="page-footer relative-footer">Page 4 of 4</div>
